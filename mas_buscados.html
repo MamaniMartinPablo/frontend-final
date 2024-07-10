@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Autos Antiguos más Buscados</title>
+    <link rel="stylesheet" href="./css/mas_buscados.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    
+</head>
+<body>
+    <header>
+        <script src="./js/tpHeader.js"></script> 
+    </header>
+
+    <main>
+        <div class="container" id="app">
+            <div class="container-item" v-for="dato in datos">
+                <h2 class="container-item-titulo">{{dato.brand}}</h2>
+                <img class="container-item-imagen" v-bind:src="dato.image" :alt="dato.title"/>
+                <h3 class="container-item-descripcion">{{dato.model}}</h3>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/mas_buscados.js"></script>
+    <script src="https://kit.fontawesome.com/90b7fad58a.js" crossorigin="anonymous"></script>
+    <script src="./js/logout.js"></script>
+</body>
+</html>

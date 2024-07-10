@@ -1,0 +1,315 @@
+
+
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    /* color: rgb(255, 255, 255); */
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: 400px; */
+    font-style: normal;    
+}
+
+header{
+    padding: 20px;
+}
+
+footer{
+    padding: 4px;
+    background-color: red;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+
+body{
+    background-color: transparent;
+    background-image: url(../imagenes/1970_ford_mustang-boss-429.jpg); 
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+h1{
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+h3{
+    color: white;
+}
+
+h5{
+    padding: 0px;
+    margin: 0px;
+}
+
+p{
+    color: red;
+    padding: 0px;
+    font-size: 0.75rem;
+}
+
+a,button{
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gray;
+    color: white;
+}
+
+a:hover{
+    color: blue;
+    opacity: 0.75;
+}
+button:hover{
+    color: blue;
+    opacity: 0.75;
+}
+
+#auto_movil{
+    width: 125px;
+    height: 100px;
+    display: flex;
+}
+
+#nav_izq{
+    display: flex;
+    float: left;
+    /* justify-content:flex-start;
+    flex-direction: row; */
+}
+
+#nav_der{
+    display: flex;
+    float: right;
+    /* justify-content:flex-end;
+    flex-direction: row; */
+}
+
+img{
+    border-radius: 10px;
+    width:300px;
+    height:200px;
+}
+
+/* .container{    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+
+.tarjeta {
+    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 350px;
+    /* padding: 10px; */
+    /* width: 200px;
+    height: 300px; */
+    /* font-size: 10px;
+    flex-flow: wrap;
+    justify-content: space-evenly; */
+    color: white;
+}
+
+
+.tarjeta a:hover{
+    opacity: 0.5;
+} 
+
+
+/* Damian: acá agrego formato para los estilos del js */
+header {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid #888;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+header nav {
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+header nav a {
+    text-decoration: none;
+    margin-right: 20px;
+    background-color: #555;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(255, 255, 255, 0.2);
+}
+
+header nav a:last-child {
+    margin-right: 0;
+}
+
+header nav a:hover {
+    background-color: #777;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+header nav a:active {
+    position: relative;
+    top: 1px;
+}
+
+/* Y acá el fondo del body */
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1)), linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%, transparent 75%, rgba(255,255,255,0.1) 75%, rgba(255,255,255,0.1));
+    background-size: 20px 20px;
+}
+
+
+
+
+nav{
+    height: 80px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 10px 50px;
+}
+.logo{
+    height: 40px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+li a.active, li a:hover{
+    background: #000090;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+section{
+    /* background: url(./imagenes/fondo.jpg) no-repeat; */
+    background-size: cover;
+    background-position: center center;
+    height: calc(100vh - 80px);
+}
+
+
+@media (max-width: 858px){
+    .container{    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .tarjeta_auto{
+        display: flex;
+        width: 250px;
+        height: 200px;
+    }
+    
+    .tarjeta {
+        border: 1px solid;
+        border-radius: 10px;
+        /* padding: 10px; */
+        width: 250px;
+        height: 280px;
+        /* font-size: 10px;
+        flex-flow: wrap;
+        justify-content: space-evenly; */
+        color: white;
+    }
+    img{
+        width: 250px;
+    }
+
+
+
+
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: red;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+@media (min-width: 859px){
+    img{
+        width: 280px;
+    }
+
+    .tarjeta a:hover{
+        opacity: 0.5;
+
+    } 
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}

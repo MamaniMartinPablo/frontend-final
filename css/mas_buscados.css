@@ -1,0 +1,140 @@
+/* For mobile phones: */
+[class*="col-"] { /*a todas las clases que comiencen con col- ponele 100%*/
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) { /* entonces >= 600px  */
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}  /* 100/12  */
+    .col-s-2 {width: 16.66%;}   /* 100/12*2  */
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}  /*  100/12*12  */   
+}
+@media only screen and (min-width: 768px) {  /* entonces >=   */
+    /* For desktop: */
+    .col-1 {width: 8.33%;}  /*  100/12  */
+    .col-2 {width: 16.66%;} /* 100/12*2  */
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;    
+}
+
+header{
+    padding: 20px;
+}
+
+a{
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+a:hover{
+    color: blue;
+    opacity: 0.75;
+}
+
+#nav_izq{
+    display: flex;
+    float: left;
+    /* justify-content:flex-start;
+    flex-direction: row; */
+}
+
+#nav_der{
+    display: flex;
+    float: right;
+    /* justify-content:flex-end;
+    flex-direction: row; */
+}
+
+
+
+footer{
+    background-color: red;
+    text-align: center;
+}
+
+body{
+    background-color: transparent;
+    background-image: url(../imagenes/1970_ford_mustang-boss-429.jpg); 
+    width: 100%;
+    height: 100%;
+    background-repeat:unset;
+    background-size:auto;
+} 
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.container-item{
+    padding: 5px;
+    margin: 20px;
+    width: 400px;
+    border: 1px solid rgb(144, 124, 124);
+    border-radius:5px;
+    box-shadow: 5px 5px 0px rgb(56, 50, 54);
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+    transition-duration: 1.2s;
+}
+
+.container-item:hover{
+    transform:scale(1.04);
+    -webkit-transform:scale(1.04);
+    -moz-transform:scale(1.04);
+    -ms-transform:scale(1.04);
+    -o-transform:scale(1.04);
+    cursor: pointer;
+}
+
+.container-item-titulo{
+    text-align: center;
+}
+
+.container-item-imagen{
+    width: 350px;
+    height: 280px;
+    display: block;
+    margin: auto;
+  }
+
+
+  .container-item-descripcion{
+    margin-top: 10px;
+    text-transform: lowercase;
+    text-align: center;
+}
