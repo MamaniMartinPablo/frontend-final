@@ -4,8 +4,8 @@ createApp({
         return {
             usuarios: [],
             // esto es para el boton modificar +(location.search.substr(4)===""?'':"/")+location.search.substr(4)
-            // url: 'https://luisguerra.pythonanywhere.com/usuarios' ,
-            url:'http://127.0.0.1:5000/usuarios', 
+            url: 'https://pablomartin.pythonanywhere.com/usuarios' ,
+            // url:'http://127.0.0.1:5000/usuarios', 
             error: false,
             cargando: true,
             /*alta*/
@@ -42,8 +42,6 @@ createApp({
                 })
         },*/
         grabar() {
-            console.log(this.clave);
-            console.log(this.usuario);
             let user = {
                 usuario: this.usuario,
                 clave: this.clave,

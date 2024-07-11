@@ -4983,9 +4983,8 @@ const { createApp } = Vue
     data() {
       return {
         productos:[],
-        url:'http://127.0.0.1:5000/vehiculos', 
-   // si el backend esta corriendo local  usar localhost 5000(si no lo subieron a pythonanywhere)
-        //url:'http://mcerda.pythonanywhere.com/productos',   // si ya lo subieron a pythonanywhere
+        // url:'http://127.0.0.1:5000/vehiculos', 
+        url:'https://pablomartin.pythonanywhere.com/vehiculos',// si ya lo subieron a pythonanywhere
         error:false,
         cargando:true,
         /*atributos para el guardar los valores del formulario */

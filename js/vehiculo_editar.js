@@ -10,7 +10,8 @@ const { createApp } = Vue
         imagen:"",
         anio:0,
         origen:"",
-        url:'http://127.0.0.1:5000/vehiculos/'+id,
+        // url:'http://127.0.0.1:5000/vehiculos/'+id,
+        url:'https://pablomartin.pythonanywhere.com/vehiculos/'+id,
        }  
     },
     methods: {
