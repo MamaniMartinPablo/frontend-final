@@ -1,0 +1,47 @@
+<!doctype html>
+    <html lang="en">
+    <head>
+      <title>Producto Nuevo</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    </head>
+    <body>
+        <header>
+            <script src="./js/tpHeader.js"></script> 
+        </header>
+      <main>
+        <div class="container" id="app">
+          <form style="margin:10px auto ; width: 400px; padding: 20px;">
+            <a href="./informacion_usuarios.html" class="volver">VOLVER</a>
+            <h2 class="center">Editar Vehiculo</h2>
+               <div class="mb-3">
+            <label for="id">Id</label>
+            <input type="number" name="id" id="id" disabled v-model="id" >
+          </div>
+          <div class="mb-3">
+            <label for="usuario">Usuario</label>
+            <input type="text" name="usuario" id="usuario" v-model="usuario">
+          </div>
+          <div class="mb-3">
+            <label for="clave">Clave</label>
+            <input type="text" name="clave" id="clave" v-model="clave">
+          </div>
+          <div class="mb-3">
+            <label for="rol">Rol</label>
+            <input type="number" name="rol" id="rol" v-model="rol">
+          </div>
+          <button type="button" class="btn btn-success" v-on:click="modificar()">MODIFICAR</button>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <!-- place footer here -->
+      </footer>
+        <script src="./js/index.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="./js/usuario_editar.js"></script>
+        <script src="./js/logout.js"></script>
+    </body>
+    </html>

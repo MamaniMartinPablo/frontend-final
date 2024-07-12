@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Autos Antiguos</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <script src="./js/tpHeader.js"></script> 
+    </header>
+
+    <main>
+        <div id="app" class="container">
+            <br>
+            <a  class="btn btn-primary" href="usuario_nuevo.html">NUEVO</a>
+            <br><br>
+            <div v-if="error">
+                <h3 class="center">Lo sentimos, intente nuevamente ........</h3>
+            </div>
+            <div v-else>
+                <section v-if="cargando" class="cargando">
+                    <H3>CARGANDO ..........</H3>
+                    <img width="80" src="./imagenes/auto-blanco-negro.jpg" alt="auto">
+                </section>
+                <section v-else>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Id</th>
+                                    <th scope="col">Nombre</th>
+                                    <th scope="col">Clave</th>
+                                    <th scope="col">Rol</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class=""  v-for="usuario in usuarios">
+                                    <td scope="row">{{usuario.id}}</td>
+                                    <td>{{usuario.usuario}}</td>
+                                    <td>{{usuario.clave}}</td>
+                                    <td>{{usuario.rol}}</td>
+                                    <td>
+                    			<a class="btn btn-primary" :href="'usuario_editar.html?id='+ usuario.id" >Editar</a>
+                                      <button type="button" class="btn btn-danger" v-on:click="eliminar(usuario.id)" >Eliminar</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/usuarios.js"></script>
+    <script src="./js/logout.js"></script>
+</body>
+</html>
