@@ -7,6 +7,7 @@ createApp({
       url: "https://auto-cl-default-rtdb.firebaseio.com/V1/vehicles/new/search/data.json",
       datos: [],
       error: false,
+      cargando:true,
     }
   },
   methods: {
@@ -16,6 +17,7 @@ createApp({
         .then(
           data => {
             this.datos = data
+            this.cargando =false
           }
         )
         .catch(error => {

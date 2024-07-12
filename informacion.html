@@ -14,15 +14,15 @@
     <main>
         <div id="app" class="container">
             <br>
-            <a  class="btn btn-primary" href="vehiculo_nuevo.html">Nuevo</a>
+            <a  class="btn btn-primary" href="vehiculo_nuevo.html">NUEVO</a>
             <br><br>
             <div v-if="error">
-                <p>Lo sentimos , ........</p>
+                <h3 class="center">Lo sentimos, intente nuevamente ........</h3>
             </div>
             <div v-else>
-                <section v-if="cargando">
-                    <div class="spinner-border"></div>
-                    <p>Cargando .....</p>
+                <section v-if="cargando" class="cargando">
+                    <H3>CARGANDO ..........</H3>
+                    <img width="80" src="./imagenes/auto-blanco-negro.jpg" alt="auto">
                 </section>
                 <section v-else>
                     <div class="table-responsive">
@@ -44,7 +44,7 @@
                                     <td>{{producto.anio}}</td>
                                     <td>{{producto.origen}}</td>
                                     <td>
-                                        <img width="40"  :src="producto.imagen" :alt="producto.nombre">
+                                        <img class="img-admin"  :src="producto.imagen" :alt="producto.nombre">
                                     </td>
                                     <td>
                     			<a class="btn btn-primary" :href="'vehiculo_editar.html?id='+ producto.id" >Editar</a>

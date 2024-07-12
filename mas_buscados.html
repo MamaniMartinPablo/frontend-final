@@ -14,12 +14,23 @@
     </header>
 
     <main>
-        <div class="container" id="app">
-            <div class="container-item" v-for="dato in datos">
-                <h2 class="container-item-titulo">{{dato.brand}}</h2>
-                <img class="container-item-imagen" v-bind:src="dato.image" :alt="dato.title"/>
-                <h3 class="container-item-descripcion">{{dato.model}}</h3>
+        <div id="app">
+            <div v-if="error">
+                <h3 class="center">Lo sentimos, intente nuevamente ........</h3>
             </div>
+            <div v-else>
+                <section v-if="cargando" class="cargando">
+                    <H3>CARGANDO ..........</H3>
+                    <img width="80" src="./imagenes/auto-blanco-negro.jpg" alt="auto">
+                </section>
+                <section v-else class="container">
+                    <div class="container-item" v-for="dato in datos">
+                        <h2 class="container-item-titulo">{{dato.brand}}</h2>
+                        <img class="container-item-imagen" v-bind:src="dato.image" :alt="dato.title"/>
+                        <h3 class="container-item-descripcion">{{dato.model}}</h3>
+                    </div>
+                </section>
+            </div>  
         </div>
     </main>
 

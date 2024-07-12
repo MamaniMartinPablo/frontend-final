@@ -1,8 +1,8 @@
 
 
 *{
-    /* padding: 0;
-    margin: 0; */
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
     /* color: rgb(255, 255, 255); */
     font-family: "Nunito", sans-serif;
@@ -18,7 +18,7 @@ footer{
     text-align: center;
     position: fixed;
     bottom: 0px;
-    width: 100%;
+    width: 100vw
 }
 
 body{
@@ -66,6 +66,7 @@ a:hover{
 button:hover{
     color: blue;
     opacity: 0.75;
+    cursor: pointer;
 }
 
 #auto_movil{
@@ -94,21 +95,25 @@ img{
     height:200px;
 }
 
-/* .container{    
+.img-admin{
+    width: 150px;
+    height: 100px;
+}
+
+
+.contenedor{    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-} */
+}
 
 .tarjeta {
-    margin: 0 auto;
+    margin: 5px ;
     border: 1px solid;
     border-radius: 10px;
-    width: 350px;
-    /* padding: 10px; */
-    /* width: 200px;
-    height: 300px; */
+    width: 300px;
+    padding: 10px;
     /* font-size: 10px;
     flex-flow: wrap;
     justify-content: space-evenly; */
@@ -170,6 +175,21 @@ header nav .logout:hover{
     position: relative;
     top: 1px;
 } */
+
+
+.cargando{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.volver{
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+}
 
 /* Y acá el fondo del body */
 body {
@@ -283,7 +303,7 @@ section{
     }
     nav ul li{
         display: block;
-        margin: 50px 0;
+        margin: 25px 0;
         line-height: 30px;
     }
     nav ul li a{

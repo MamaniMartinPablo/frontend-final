@@ -7,8 +7,8 @@ link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.
 document.head.appendChild(link);
 
 // Escribir el contenido HTML después de cargar los estilos de FontAwesome
-document.write('<h1><i class="fas fa-car"></i>&nbsp;&nbsp;&nbsp;BLOG DE AUTOS ANTIGUOS</h1>');
-document.write('<nav> <input type="checkbox" id="check"> </input> <label for="check" class="checkbtn"> <i class="fas fa-bars"></i> </label> <ul> <li><a class="active" href="index.html">Home</a></li>    <li><a href="mas_buscados.html">Más buscados</a></li> <li class="nav-item dropdown" id="crudv"   ><a class="dropdown-item" href="informacion.html">CRUD autos</a></li><li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li><li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>  <li> <button  id="logout" onclick="logout()" type="button" class="logout">Logout</button> </li> </ul>    </nav>  ')
+document.write('<h1> <a href="./index.html"> <i class="fas fa-car"></a></i>&nbsp;&nbsp;&nbsp;BLOG DE AUTOS ANTIGUOS</h1>');
+document.write('<nav> <input type="checkbox" id="check"> </input> <label for="check" class="checkbtn"> <i class="fas fa-bars"></i> </label> <ul> <li><a class="" href="index.html">Home</a></li>  <li><a class="" href="vehiculos.html">Vehiculos</a></li>  <li><a href="mas_buscados.html">Más buscados</a></li> <li class="nav-item dropdown" id="crudv"   ><a class="dropdown-item" href="crud.html">CRUD</a></li><li class="nav-item"><a class="nav-link" href="registro.html">Registro</a></li><li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>  <li> <button  id="logout" onclick="logout()" type="button" class="logout">Logout</button> </li> </ul>    </nav>  ')
 // document.write
 // ('<nav><a href="index.html">Home</a>  <a href="informacion.html">Información de Autos</a> <a href="mas_buscados.html">Los Autos más buscados</a> <a href="registro.html">Registrate</a></nav>');
 
