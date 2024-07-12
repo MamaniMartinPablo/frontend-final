@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre Autos Antiguos</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <script src="./js/tpHeader.js"></script> 
+    </header>
+
+    <main>
+        <div id="app" class="container">
+            <br>
+            <div v-if="error">
+                <h3>Lo sentimos , ........</h3>
+            </div>
+            <div v-else>
+                <section v-if="cargando" class="cargando">
+                    <H3>CARGANDO ..........</H3>
+                    <img width="80" src="./imagenes/auto-blanco-negro.jpg" alt="auto">
+                </section>
+                <section v-else>
+                    <div class="contenedor">
+
+                                <div class="tarjeta"  v-for="producto in productos">
+                                    <h3>{{producto.nombre}}</h3>
+                                    <img width="40"  :src="producto.imagen" :alt="producto.nombre">
+                                    
+                                        <h3>Año: {{producto.anio}}</h3>
+                                        
+                                        <h4>Origen: {{producto.origen}}</h4>
+                                
+                                </div>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/logout.js"></script>
+</body>
+</html>
