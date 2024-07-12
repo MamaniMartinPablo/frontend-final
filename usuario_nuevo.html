@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/registro.css">
+    
+</head>
+<body>
+    <header>
+        <script src="./js/tpHeader.js"></script> 
+    </header>
+
+    <main>
+        <div class="container" id="app">
+            <form >
+                <a href="./informacion_usuarios.html" class="volver">VOLVER</a>
+              <h2>Alta de Usuario</h2>
+              <div class="mb-3">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" id="usuario" v-model="usuario">
+              </div>
+              <div class="mb-3">
+                <label for="clave">Clave</label>
+                <input type="text" name="clave" id="clave" v-model="clave">
+              </div>        
+              <button type="button" class="btn btn-success" v-on:click="grabar()">Agregar</button>
+            </form>
+          </div>
+    </main>
+
+    <footer>
+        
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <!-- <script src="./js/validarRegistro.js"></script> -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./js/usuario.js"></script>
+    <script src="./js/logout.js"></script>
+</body>
+</html>
