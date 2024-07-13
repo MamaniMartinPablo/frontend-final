@@ -184,11 +184,17 @@ header nav .logout:hover{
 }
 
 .volver{
-    margin-bottom: 10px;
+    margin: 5px;
 }
 
 .center{
     text-align: center;
+}
+
+.contenedor-botones{
+    display: flex;
+    justify-content:flex-start;
+    gap: 20px;
 }
 
 /* Y acá el fondo del body */

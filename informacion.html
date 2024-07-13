@@ -14,8 +14,11 @@
     <main>
         <div id="app" class="container">
             <br>
-            <a  class="btn btn-primary" href="vehiculo_nuevo.html">NUEVO</a>
-            <br><br>
+            <div class="contenedor-botones">
+                <a class="volver" href="vehiculo_nuevo.html">NUEVO</a>
+                <a href="./crud.html" class="volver">VOLVER</a>
+            </div>
+            <br>
             <div v-if="error">
                 <h3 class="center">Lo sentimos, intente nuevamente ........</h3>
             </div>
