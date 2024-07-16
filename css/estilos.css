@@ -14,12 +14,18 @@
 
 footer{
     padding: 4px;
-    background-color: red;
+    background-color: #8B4513;
     text-align: center;
     position: fixed;
     bottom: 0px;
     width: 100vw
 }
+
+.iconos{
+    font-size: 20px;
+}
+
+
 
 body{
     background-color: transparent;
@@ -277,13 +283,17 @@ table {
     caption-side: bottom;
  }
  th {
-    background: #550707;
+    background: #8B4513;
  }
 
  .odd th, .odd td {
     background: #1a8c6e;
  }
 
+
+ .accion{
+    font-size: 18px;
+ }
 
 
 @media (max-width: 858px){
