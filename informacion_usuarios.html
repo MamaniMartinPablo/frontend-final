@@ -12,13 +12,12 @@
     </header>
 
     <main>
+        <div class="contenedor-botones">
+            <a  class="volver" href="usuario_nuevo.html">NUEVO</a>
+            <a href="./crud.html" class="volver">VOLVER</a>
+        </div>
         <div id="app" class="container">
             <br>
-            <div class="contenedor-botones">
-                <a  class="volver" href="usuario_nuevo.html">NUEVO</a>
-                <a href="./crud.html" class="volver">VOLVER</a>
-            </div>
-            <br><br>
             <div v-if="error">
                 <h3 class="center">Lo sentimos, intente nuevamente ........</h3>
             </div>
@@ -47,6 +46,8 @@
                                     <td>{{usuario.rol}}</td>
                                     <td>
                     			<a class="btn btn-primary" :href="'usuario_editar.html?id='+ usuario.id" >Editar</a>
+                                <br>
+                                <br>
                                       <button type="button" class="btn btn-danger" v-on:click="eliminar(usuario.id)" >Eliminar</button>
                                     </td>
                                 </tr>

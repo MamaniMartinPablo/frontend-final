@@ -12,12 +12,11 @@
     </header>
 
     <main>
+        <div class="contenedor-botones">
+            <a class="volver" href="vehiculo_nuevo.html">NUEVO</a>
+            <a href="./crud.html" class="volver">VOLVER</a>
+        </div>
         <div id="app" class="container">
-            <br>
-            <div class="contenedor-botones">
-                <a class="volver" href="vehiculo_nuevo.html">NUEVO</a>
-                <a href="./crud.html" class="volver">VOLVER</a>
-            </div>
             <br>
             <div v-if="error">
                 <h3 class="center">Lo sentimos, intente nuevamente ........</h3>
@@ -42,7 +41,7 @@
                             </thead>
                             <tbody>
                                 <tr class=""  v-for="producto in productos">
-                                    <td scope="row">{{producto.id}}</td>
+                                    <td class=""  scope="row">{{producto.id}}</td>
                                     <td>{{producto.nombre}}</td>
                                     <td>{{producto.anio}}</td>
                                     <td>{{producto.origen}}</td>
@@ -50,7 +49,9 @@
                                         <img class="img-admin"  :src="producto.imagen" :alt="producto.nombre">
                                     </td>
                                     <td>
-                    			<a class="btn btn-primary" :href="'vehiculo_editar.html?id='+ producto.id" >Editar</a>
+                    			      <a class="btn btn-primary" :href="'vehiculo_editar.html?id='+ producto.id" >Editar</a>
+                                      <br>
+                                      <br>
                                       <button type="button" class="btn btn-danger" v-on:click="eliminar(producto.id)" >Eliminar</button>
                                     </td>
                                 </tr>

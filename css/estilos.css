@@ -193,7 +193,7 @@ header nav .logout:hover{
 
 .contenedor-botones{
     display: flex;
-    justify-content:flex-start;
+    justify-content:space-around;
     gap: 20px;
 }
 
@@ -259,6 +259,31 @@ section{
     background-position: center center;
     height: calc(100vh - 80px);
 }
+
+
+/* Estilos de tablas */
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+ }
+ th, td {
+    width: 20%;
+    text-align: left;
+    vertical-align: top;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.2em;
+    caption-side: bottom;
+ }
+ th {
+    background: #550707;
+ }
+
+ .odd th, .odd td {
+    background: #1a8c6e;
+ }
+
 
 
 @media (max-width: 858px){
